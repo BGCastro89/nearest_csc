@@ -27,7 +27,7 @@ def latlonDistanceInKm(lat1, lon1, lat2, lon2):
     return round(d,1) # Assume Accurate within ~0.1km due to Idealized Sphere Earth
 
 # @app.route("/nearest-csc")
-def getCDSChart(request):
+def nearest_csc(request):
     """Nearest Clear Dark Sky Chart from A. Danko's site
     All 5000+ sities are binned by lat/lon of 1 degree. Only bother to find the
     distance to sites within current +/- 1 degree, searchig 9 bins total.
