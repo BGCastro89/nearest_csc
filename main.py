@@ -1,16 +1,14 @@
-# from flask import Flask, request
-# from flask import json as fjson
 import json
 import math
 import os
 
-# app = Flask(__name__)
-# debug = True
+PATH = "."
+FILENAME = "csc_sites.json"
 
-def latlonDistanceInKm(lat1, lon1, lat2, lon2):
-    """Calculate distance between two lat/long points on globe in kilometres.
+def lat_lon_distance_in_km(lat1, lon1, lat2, lon2):
+    """Calculate distance between two latitude-longitide points on sphere in kilometres.
 
-    args: lat/lon for two points on Earth
+    args: Float lat/lon for two points on Earth
     returns: Float representing distance in kilometres
     """
     R = 6371 # Earth Radius in kilometres (assume perfect sphere)
@@ -26,29 +24,27 @@ def latlonDistanceInKm(lat1, lon1, lat2, lon2):
 
     return round(d,1) # Assume Accurate within ~0.1km due to Idealized Sphere Earth
 
-# @app.route("/nearest-csc")
 def nearest_csc(request):
-    """Nearest Clear Dark Sky Chart from A. Danko's site
-    All 5000+ sities are binned by lat/lon of 1 degree. Only bother to find the
-    distance to sites within current +/- 1 degree, searchig 9 bins total.
+    """Nearest Clear Sky Chart from A. Danko's site: https://www.cleardarksky.com/
 
-    args: String of lat/lon for stargazing site
-    returns: Tuple of distance to closest CDSC site, and dict of site info. If
-        no sites within 100km, return None
+    All 5000+ sities are binned by 1x1 degree lat/lon. Only check the
+    distance to sites within current bin +/- 1 degree, searching 9 bins total.
+
+    args: request object w/ args for lat/lon
+    returns: String, either with json representation of nearest site information or an error message
     """
 
-    lat = 37.773972 # request.args.get('lat', type = float)
-    lon = -122.431297 # request.args.get('lon', type = float)
+    lat = request.args.get('lat', type = float)
+    lon = request.args.get('lon', type = float)
 
-    path = "."
-    filename = "csc_sites.json"
-    file_path = os.path.join(path, filename)
+    file_path = os.path.join(PATH, FILENAME)
 
-    # get list of all csc site locations
+    # Get list of all csc site locations
     with open(file_path, 'r') as f:
         data = json.load(f)
-        nearby_cdsc = []
-        # get list of all sites within same or adjacent 1 degree lat/lon bin
+        nearby_csc = []
+
+        # Get list of all sites within same or adjacent 1 degree lat/lon bin
         try:
             for x in range(-1,2):
                 for y in range(-1,2):
@@ -58,53 +54,35 @@ def nearest_csc(request):
                         if lon_str in data[lat_str]:
                             sites_in_bin = data[lat_str][lon_str]
                             for site in sites_in_bin:
-                                nearby_cdsc.append(site)
+                                nearby_csc.append(site)
         except:
             # API returns error
-            return "Error reading from list of CSC sites"
-            # return app.response_class(
-            #     response=fjson.dumps({"msg":"Error reading from list of CSC sites"}),
-            #     status=500,
-            #     mimetype='application/json'
-            # )
+            return "ERROR parsing coordinates or reading from list of CSC sites"
 
         # Initialize vars
-        closest_dist = 3 #in degrees, cant be more than 2.828, or (2 * sqrt(2))
+        closest_dist = 3 # units in degrees, can't be more than 2.828, or (2 * sqrt(2))
         closest_site = {}
         dist_km = 100
 
-        # Find the closest site in CDSC database within bins
-        for site in nearby_cdsc:
+        # Find the closest site in Clear Dark Sky database within bins
+        for site in nearby_csc:
             site_lat = site["lat"]
             site_lon = site["lon"]
+
+            # Quick Approximate distance in units of degrees, only calculate km distance if closer than previous closest
             dist = math.sqrt( (site_lat-lat)**2 + (site_lon-lon)**2 )
+
             if dist < closest_dist:
                 closest_dist = dist
                 closest_site = site
-                # Calculate distance modeling earth as perfect sphere
-                dist_km = latlonDistanceInKm(lat, lon, site_lat, site_lon)
+                # Calculate distance modeling Earth as perfect sphere
+                dist_km = lat_lon_distance_in_km(lat, lon, site_lat, site_lon)
 
-        # grab site url and return site data if within 100km
+        # Grab site url and return site data if within 100 km
         if dist_km < 100:
             closest_site['dist_km'] = dist_km
-            closest_site['msg'] = "SUCCESS"
             closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
             closest_site['mini_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
+            return json.dumps(closest_site)
 
-            return closest_site
-            # return app.response_class(
-            #     response=fjson.dumps(closest_site),
-            #     status=200,
-            #     mimetype='application/json'
-            # )
-
-        return "No sites within 100km"
-        # API only returns msg if no site in range
-        # return app.response_class(
-        #     response=fjson.dumps({"msg":"No sites within 100km"}),
-        #     status=200,
-        #     mimetype='application/json'
-        # )
-
-if __name__ == "__main__":
-    print getCDSChart("")
+        return "No sites found within 100 km"
