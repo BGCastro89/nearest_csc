@@ -1,10 +1,10 @@
-from flask import Flask, request
-from flask import json as fjson
+# from flask import Flask, request
+# from flask import json as fjson
 import json
 import math
 import os
 
-app = Flask(__name__)
+# app = Flask(__name__)
 # debug = True
 
 def latlonDistanceInKm(lat1, lon1, lat2, lon2):
@@ -13,7 +13,7 @@ def latlonDistanceInKm(lat1, lon1, lat2, lon2):
     args: lat/lon for two points on Earth
     returns: Float representing distance in kilometres
     """
-    R = 6371 #Earth Radius in kilometres (assume perfect sphere)
+    R = 6371 # Earth Radius in kilometres (assume perfect sphere)
 
     phi1 = math.radians(lat1)
     phi2 = math.radians(lat2)
@@ -24,9 +24,9 @@ def latlonDistanceInKm(lat1, lon1, lat2, lon2):
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
     d = R * c
 
-    return round(d,1) #Assume Accurate within ~0.1km due to Idealized Sphere Earth
+    return round(d,1) # Assume Accurate within ~0.1km due to Idealized Sphere Earth
 
-@app.route("/nearest-csc")
+# @app.route("/nearest-csc")
 def getCDSChart(request):
     """Nearest Clear Dark Sky Chart from A. Danko's site
     Finds nearest site by binning all sities by lat/lon. Only bother to find the
@@ -37,17 +37,18 @@ def getCDSChart(request):
         no sites within 100km, return None
     """
 
-    # return "Function Ran! (It ran so far away)"
+    lat = 37.773972 # request.args.get('lat', type = float)
+    lon = -122.431297 # request.args.get('lon', type = float)
 
-    lat = request.args.get('lat', type = float)
-    lon = request.args.get('lon', type = float)
+    path = "."
+    filename = "csc_sites.json"
+    file_path = os.path.join(path, filename)
 
-    file_path = os.path.join('/home/bgcastro/nearest-csc', 'csc_sites.json')
     # get list of all csc site locations
     with open(file_path, 'r') as f:
         data = json.load(f)
         nearby_cdsc = []
-        #get list of all sites within same or adjacent 1 degree lat/lon bin
+        # get list of all sites within same or adjacent 1 degree lat/lon bin
         try:
             for x in range(-1,2):
                 for y in range(-1,2):
@@ -60,18 +61,19 @@ def getCDSChart(request):
                                 nearby_cdsc.append(site)
         except:
             # API returns error
-            return app.response_class(
-                response=fjson.dumps({"msg":"Error reading from list of CSC sites"}),
-                status=500,
-                mimetype='application/json'
-            )
+            return "Error reading from list of CSC sites"
+            # return app.response_class(
+            #     response=fjson.dumps({"msg":"Error reading from list of CSC sites"}),
+            #     status=500,
+            #     mimetype='application/json'
+            # )
 
-        #Initialize vars
+        # Initialize vars
         closest_dist = 3 #in degrees, cant be more than 2.828, or (2 * sqrt(2))
         closest_site = {}
         dist_km = 100
 
-        #Find the closest site in CDSC database within bins
+        # Find the closest site in CDSC database within bins
         for site in nearby_cdsc:
             site_lat = site["lat"]
             site_lon = site["lon"]
@@ -86,16 +88,22 @@ def getCDSChart(request):
         if dist_km < 100:
             closest_site['dist_km'] = dist_km
             closest_site['msg'] = "SUCCESS"
+            closest_site['url'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
 
-            return app.response_class(
-                response=fjson.dumps(closest_site),
-                status=200,
-                mimetype='application/json'
-            )
+            return closest_site
+            # return app.response_class(
+            #     response=fjson.dumps(closest_site),
+            #     status=200,
+            #     mimetype='application/json'
+            # )
 
+        return "No sites within 100km"
         # API only returns msg if no site in range
-        return app.response_class(
-            response=fjson.dumps({"msg":"No sites within 100km"}),
-            status=200,
-            mimetype='application/json'
-        )
+        # return app.response_class(
+        #     response=fjson.dumps({"msg":"No sites within 100km"}),
+        #     status=200,
+        #     mimetype='application/json'
+        # )
+
+if __name__ == "__main__":
+    print getCDSChart("")
