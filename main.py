@@ -29,8 +29,8 @@ def latlonDistanceInKm(lat1, lon1, lat2, lon2):
 # @app.route("/nearest-csc")
 def getCDSChart(request):
     """Nearest Clear Dark Sky Chart from A. Danko's site
-    Finds nearest site by binning all sities by lat/lon. Only bother to find the
-    distance to sites within the same lat/lon +/- 1 degree.
+    All 5000+ sities are binned by lat/lon of 1 degree. Only bother to find the
+    distance to sites within current +/- 1 degree, searchig 9 bins total.
 
     args: String of lat/lon for stargazing site
     returns: Tuple of distance to closest CDSC site, and dict of site info. If
@@ -88,7 +88,8 @@ def getCDSChart(request):
         if dist_km < 100:
             closest_site['dist_km'] = dist_km
             closest_site['msg'] = "SUCCESS"
-            closest_site['url'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
+            closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
+            closest_site['mini_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
 
             return closest_site
             # return app.response_class(
