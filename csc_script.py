@@ -1,5 +1,5 @@
 def getFormattedCoordFile():
-    with open("chart_keys00.txt", 'r') as f:
+    with open("chart_keys00.txt", 'r', encoding='ISO-8859-1') as f:
         data = f.read()
         lines=data.split('\n')
         csc_data = []
@@ -19,7 +19,7 @@ def getFormattedCoordFile():
         return csc_data
 
 def getFormattedNamesFile():
-    with open("chart_prop00.txt", 'r') as f:
+    with open("chart_prop00.txt", 'r', encoding='ISO-8859-1') as f:
         data = f.read()
         lines=data.split('\n')
         csc_dict = {}
