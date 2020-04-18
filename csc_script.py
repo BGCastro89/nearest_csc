@@ -1,5 +1,5 @@
 def getFormattedCoordFile():
-    with open("csc_coords.txt", 'r') as f:
+    with open("chart_keys00.txt", 'r') as f:
         data = f.read()
         lines=data.split('\n')
         csc_data = []
@@ -7,7 +7,7 @@ def getFormattedCoordFile():
         for line in lines:
             csc_location = line.split("|")
             if len(csc_location) == 4:
-                # print csc_location
+                # print(csc_location)
                 csc_dict = {
                     "id": csc_location[0],
                     "loc": csc_location[1],
@@ -19,14 +19,14 @@ def getFormattedCoordFile():
         return csc_data
 
 def getFormattedNamesFile():
-    with open("csc_title.txt", 'r') as f:
+    with open("chart_prop00.txt", 'r') as f:
         data = f.read()
         lines=data.split('\n')
         csc_dict = {}
 
         for line in lines:
             csc_location = line.split("|")
-            # print csc_location
+            # print(csc_location)
             if len(csc_location) == 3:
                 site_id = csc_location[0]
                 csc_dict[site_id] = csc_location[2]
@@ -45,18 +45,18 @@ minlat = min(csc_data, key=lambda x:x['lat'])
 maxlon = max(csc_data, key=lambda x:x['lon'])
 minlon = min(csc_data, key=lambda x:x['lon'])
 
-print "maxlat:", maxlat['lat']
-print "minlat:", minlat['lat']
-print "maxlon:", maxlon['lon']
-print "minlon:", minlon['lon']
+print("maxlat:", maxlat['lat'])
+print("minlat:", minlat['lat'])
+print("maxlon:", maxlon['lon'])
+print("minlon:", minlon['lon'])
 
-print len(csc_data)
+print(len(csc_data))
 
 from collections import defaultdict
 import json
 csc_binned = defaultdict(dict)
 
-with open("csc_out2.txt", 'w+') as f:
+with open("csc_out.txt", 'w+') as f:
     for site in csc_data:
         site_name = csc_names[site["id"]]
         text_line = site["id"]+"|"+site_name+"|"+site["loc"]+"|"+str(site["lat"])+"|"+str(site["lon"])+"\n"
@@ -80,4 +80,4 @@ with open("csc_sites2.json", 'w+') as f:
             csc_binned[int(site["lat"])][int(site["lon"])].append(site_info)
     json.dump(csc_binned, f)
 
-print csc_binned
+print(csc_binned)
