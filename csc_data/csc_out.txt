@@ -146,7 +146,7 @@ DunlapOb|David Dunlap Observatory|Ontario|43.8627777778|-79.4222222222
 LngSltCAON|Long Sault Conservation Area|Ontario|44.04959|-78.74189
 BvrMdwObNY|Beaver Meadow Observatory|New York|42.684|-78.338
 TwnSugrsObWV|Twin Sugars Observatory|West Virginia|38.031631|-80.449273
-LNCObAB|Làr Na Cruinne Observatory|Alberta|51.0505|-114.16908
+LNCObAB|LÃ r Na Cruinne Observatory|Alberta|51.0505|-114.16908
 FthMrdnAB|Fifth Meridian|Alberta|50.4487|-114.00175
 SnIgnObNM|San Ignacio Observatory|New Mexico|34.929103|-104.942453
 CbrlnObIL|Chamberlain Observatory|Illinois|39.0028|-90.163
@@ -239,7 +239,7 @@ LnAStON|Lennox and Addington Dark Sky Viewing Area|Ontario|44.559333|-77.116817
 Winnipeg|Winnipeg|Manitoba|49.895136|-97.1383744
 KitchenerWaterloo|Kitchener-Waterloo|Ontario|43.450301|-80.4831917
 RchstrHY|Rochester|New York|43.155|-77.616
-Quebec|Québec|Quebec|46.8|-71.25
+Quebec|QuÃ©bec|Quebec|46.8|-71.25
 Philadelphia|Philadelphia|Pennsylvania|39.952|-75.164
 KittAZ|Kitt Peak|Arizona|31.9633333333|-111.6
 Victoria|Victoria|British Columbia|48.433|-123.35
@@ -362,7 +362,7 @@ ChbtSPCCA|Chabot Space and Science Center|California|37.8191333333|-122.18186111
 MiltonON|Milton|Ontario|43.517|-79.883
 BrrgSpCA|Borrego Springs|California|33.256|-116.374
 PneMtnObOR|Pine Mountain Observatory|Oregon|43.791|-120.9377
-ObDcvtVBQC|Observatoire de la Découverte de Val-Bélair|Quebec|46.829444|-71.455556
+ObDcvtVBQC|Observatoire de la DÃ©couverte de Val-BÃ©lair|Quebec|46.829444|-71.455556
 LnclnshrIL|Lincolnshire|Illinois|42.19|-87.908
 MtTamaCA|Mount Tamalpais State Park|California|37.910833|-122.612778
 WllmMmObOn|B. Williams Mem. Observatory|Ontario|44.062689|-79.736795
@@ -394,7 +394,7 @@ FtGriffinTX|Fort Griffin State Historic Site|Texas|32.920808|-99.229867
 KatyTX|Katy|Texas|29.786|-95.824
 DeerTrailCO|DAS Dark Sky Site|Colorado|39.6480555556|-103.92925
 LVAASSMCPA|LVAAS South Mountain Campus|Pennsylvania|40.5663888889|-75.435
-TroisRivPQ|Trois-Rivières|Quebec|46.35|-72.55
+TroisRivPQ|Trois-RiviÃ¨res|Quebec|46.35|-72.55
 Kelowna|Kelowna|British Columbia|49.8879519|-119.4960106
 OrsPrtObUT|Orson Pratt Observatory|Utah|40.2472222222|-111.650555556
 RothneyAL|Rothney Astrophysical Observatory|Alberta|50.8683333333|-114.288333333
@@ -464,7 +464,7 @@ Observatoire_POLARIS|Observatoire POLARIS|Quebec|46.355|-73.3861111111
 SlkCcObOH|Stonelick Lake State Park|Ohio|39.217|-84.085
 VRTSObAZ|VERITAS|Arizona|31.675|-110.954
 EilColOBNY|Eileen Collins Observatory|New York|42.1|-77.05
-StZenonPQ|Saint-Zénon|Quebec|46.559|-73.815
+StZenonPQ|Saint-ZÃ©non|Quebec|46.559|-73.815
 BlueCanyonCA|Blue Canyon|California|39.257|-120.71
 PrdUnvIN|Purdue University|Indiana|40.426916|-86.92393
 RckyGpSPMD|Rocky Gap State Park|Maryland|39.7096|-78.64992
@@ -472,10 +472,10 @@ LnclnNE|Lincoln|Nebraska|40.8|-96.667
 YnnRscWI|Yanna Research Station|Wisconsin|42.790686|-89.4381335
 FyttvllNC|Fayetteville|North Carolina|35.053|-78.879
 BrthdCO|Berthoud|Colorado|40.3116666667|-105.086666667
-sapm_pq|SAPM à Hemmingford|Quebec|45.05|-73.5833333333
+sapm_pq|SAPM Ã  Hemmingford|Quebec|45.05|-73.5833333333
 Kamloops|Kamloops|British Columbia|50.667|-120.333
 ChrryGrvMN|Cherry Grove|Minnesota|44.19675|-92.86244
-MntrlFQC|Montréal|Quebec|45.5|-73.583
+MntrlFQC|MontrÃ©al|Quebec|45.5|-73.583
 OklahomaOK|Oklahoma City|Oklahoma|35.468|-97.516
 GrnByWI|Green Bay|Wisconsin|44.519|-88.02
 LkLouiseAB|Lake Louise|Alberta|51.433|-116.183
@@ -660,7 +660,7 @@ DlthMN|Duluth|Minnesota|46.783|-92.106
 PrrysbrgOH|Perrysburg Observatory|Ohio|41.5405833333|-83.6147777778
 MtchnNJ|Metuchen|New Jersey|40.543|-74.364
 batstoNJ|Batsto|New Jersey|39.642|-74.648
-SprRvS1QC|St-Pierre de la rivière du sud, portail étoilé de la côte du sud|Quebec|46.867683|-70.54485
+SprRvS1QC|St-Pierre de la riviÃ¨re du sud, portail Ã©toilÃ© de la cÃ´te du sud|Quebec|46.867683|-70.54485
 GNTObNM|General Nathan Twining Observatory|New Mexico|34.5931|-106.8201
 WdlndObNH|Woodland Observatory|New Hampshire|42.8793|-71.623
 SHASObNJ|Sheep Hill Observatory|New Jersey|40.919155|-74.406238
@@ -708,7 +708,7 @@ NshuaNH|Nashua|New Hampshire|42.765|-71.468
 Chicoutimi|Chicoutimi|Quebec|48.433|-71.067
 RttnCrkPkTX|Rattan Creek|Texas|30.447453|-97.7567406
 CdrvMA|Cedarville|Massachusetts|41.8104|-70.5553
-ObStZnQC|Observatoire de la Pourvoirie St-Zénon|Quebec|46.524655|-73.692895
+ObStZnQC|Observatoire de la Pourvoirie St-ZÃ©non|Quebec|46.524655|-73.692895
 MtStAlxQC|Mont St-Alex|Quebec|45.245783|-73.109692
 EglObWI|Eagle Observatory|Wisconsin|42.53|-88.28
 KrbyRpFL|Kirby Storter Roadside Park|Florida|25.8686666667|-81.1639916667
@@ -948,7 +948,7 @@ Lakehurst|Lakehurst|New Jersey|40.0144444444|-74.3116666667
 OvrstrtObSC|Overstreet Observatory|South Carolina|34.90369|-82.0144289
 ThmpsnsYdNC|Thompson's Yard|North Carolina|36.1461|-80.31833
 GlenleaObMB|Glenlea Astronomical Observatory|Manitoba|49.645203|-97.121776
-StTheresPQ|Ste-Thérèse|Quebec|45.6563888889|-73.8761111111
+StTheresPQ|Ste-ThÃ©rÃ¨se|Quebec|45.6563888889|-73.8761111111
 TampaFL|Tampa|Florida|27.947|-82.459
 ElchNtrGA|Elachee Nature Science Center|Georgia|34.2459666667|-83.8322
 DlnyPkMD|Dulaney Springs Park|Maryland|39.4705811|-76.6029816
@@ -1062,7 +1062,7 @@ BuckhornON|Buckhorn Observatory|Ontario|44.72|-78.32
 PtmcAmtcOBMD|Potomac Astrometric Observatory|Maryland|39.0475|-77.2063888889
 CrvlObAB|Carvel Observatory|Alberta|53.49|-114.3
 UpKnskLkAB|Upper Kananaskis Lake|Alberta|50.616750666|-115.152003207
-stvalerien_PQ|St-Valérien-de-Milton|Quebec|45.6023026|-72.6711641
+stvalerien_PQ|St-ValÃ©rien-de-Milton|Quebec|45.6023026|-72.6711641
 DeKalbIL|De Kalb|Illinois|41.929|-88.75
 GRWAObMA|George R. Wallace, Jr. Astrophysical Observatory|Massachusetts|42.61|-71.485
 WlkrCObGA|Walker County Observatory|Georgia|34.85297|-85.31424
@@ -1079,7 +1079,7 @@ LckykSK|Lucky Lake|Saskatchewan|50.9830819|-107.1342746
 HpknsObMA|Hopkins Observatory|Massachusetts|42.69651|-73.18432
 MtclfNCMN|Metcalf Nature Center|Minnesota|44.93734|-92.82157
 LxngtSC|Lexington(SC)|South Carolina|33.981|-81.236
-RCDOCA|Rancho Cañada del Oro|California|37.147069|-121.77515
+RCDOCA|Rancho CaÃ±ada del Oro|California|37.147069|-121.77515
 GSDNPCO|Great Sand Dunes National Park and Preserve|Colorado|37.744012|-105.50584
 BvrCrkObMD|Beaver Creek Observatory|Maryland|39.5775|-77.6425
 DtchHObNM|Dutchman's Hill Observatory|New Mexico|36.9222|-107.8802
@@ -1197,7 +1197,7 @@ ForesthCA|Foresthill|California|39.0191|-120.8288
 SntRsCA|Santa Rosa|California|38.441|-122.713
 IcBxCO|The Icebox|Colorado|39.9676333333|-105.78315
 HRHObFL|HRH Observatory|Florida|27.3064833333|-82.4776833333
-StJrmQC|Saint-Jérôme|Quebec|45.770133|-74.01415
+StJrmQC|Saint-JÃ©rÃ´me|Quebec|45.770133|-74.01415
 PrrySndON|Parry Sound|Ontario|45.3474|-80.0348
 CdrHPkMO|Cedar Hill Park|Missouri|38.348924|-90.644313
 BlsmLkWI|Balsam Lake|Wisconsin|45.452|-92.454
@@ -1272,7 +1272,7 @@ NghtFlObAL|Nightfall Observatory|Alabama|33.870378|-86.782358
 WrldEdSpPA|High Knob Overlook|Pennsylvania|41.441|-76.6733
 AvnNC|Avon|North Carolina|35.352|-75.511
 LkWppkPA|Lake Wallenpaupack|Pennsylvania|41.42355|-75.22459
-ObCrpLPQC|Observatoire Les Trois Étangs - La Patrie|Quebec|45.431261|-71.261247
+ObCrpLPQC|Observatoire Les Trois Ã‰tangs - La Patrie|Quebec|45.431261|-71.261247
 KnkRvrAK|Knik River Swimming Hole|Alaska|61.508491|-148.99697
 EckleyPA|Eckley Miners' Village|Pennsylvania|40.993|-75.863
 MooreObKY|Moore Observatory|Kentucky|38.3444444444|-85.5288888889
@@ -1280,7 +1280,7 @@ PntpObVA|Pinetop Observatory|Virginia|38.24|-78.972
 AtnsOH|Athens|Ohio|39.329|-82.101
 RkyMtnSObcO|Rocky Mountain Sky Observatory|Colorado|40.353874|-104.870545
 LnLksMN|Lino Lakes|Minnesota|45.16|-93.0889
-ObABDRQC|Observatoire astronomique du bois de Belle-Rivière|Quebec|45.62415|-74.088542
+ObABDRQC|Observatoire astronomique du bois de Belle-RiviÃ¨re|Quebec|45.62415|-74.088542
 FWASTRTX|FWAS Thompsen Ranch|Texas|33.440236|-97.560715
 GrandForksMD|Grand Forks|North Dakota|47.9166666667|-97.0166666667
 HauppaugeNY|Hauppauge|New York|40.826|-73.203
@@ -1405,7 +1405,7 @@ StRmnQC|ROC St-Romain|Quebec|45.798551|-71.099551
 MddTnOH|Middletown|Ohio|39.5151|-84.3983
 MnPkCA|Menlo Park|California|37.453|-122.1817
 CmxBC|Comox|British Columbia|49.6735133|-124.9282659
-ObCgpTrsRvsPQ|Observatoire du Cégep de Trois-Rivières à Champlain|Quebec|46.47533|-72.32306
+ObCgpTrsRvsPQ|Observatoire du CÃ©gep de Trois-RiviÃ¨res Ã  Champlain|Quebec|46.47533|-72.32306
 DivideCO|Divide|Colorado|38.942|-105.157
 StndfrdAndrsOBMN|Standeford and Andreas Observatories|Minnesota|44.1397222222|-93.9969444444
 HETylrObNJ|Harold E. Taylor Observatory|New Jersey|39.4855555556|-74.5525
@@ -1539,7 +1539,7 @@ PssmKngSPTX|Possum Kingdom State Park|Texas|32.88|-98.56
 FrnknmiWI|Franklin|Wisconsin|42.877163|-87.965275
 MrthnTX|Marathon|Texas|30.205|-103.244
 AbrnCA|Auburn|California|38.897|-121.076
-PrcFryQC|Parc de la Frayère|Quebec|45.649943|-73.44317
+PrcFryQC|Parc de la FrayÃ¨re|Quebec|45.649943|-73.44317
 BlCrkOK|Blue Creek|Ohio|38.778|-83.33
 ObCntlyPQ|Observatoires de Cantley|Quebec|45.5718666667|-75.7477388889
 NvlBObNH|NovaLab Observatory|New Hampshire|42.8166666667|-71.25
@@ -1626,7 +1626,7 @@ HggrtObOR|Haggart Observatory|Oregon|45.323316|-122.578313
 OcrakNC|Ocracoke Campground|North Carolina|35.1319444444|-75.9055555556
 OxfrdMS|Oxford|Mississippi|34.366|-89.519
 ChbgmQC|Chibougamau|Quebec|49.867|-74.35
-RFLrntdsQC|Réserve Fauniques des Laurentides|Quebec|47.31|-71.19
+RFLrntdsQC|RÃ©serve Fauniques des Laurentides|Quebec|47.31|-71.19
 SgrNFWAZ|Saguaro National Forest West Visitor Center Parking Lot|Arizona|32.2558333333|-111.19
 HrtmCSPWI|Hartman Creek State Park|Wisconsin|44.32569|-89.213437
 OklndBrNJ|Oakland|New Jersey|41.013|-74.265
@@ -1747,7 +1747,7 @@ TnyMrshON|Tiny Marsh Provincial Wildlife Area|Ontario|44.587602|-79.943991
 HbkBchWA|Hobuck Beach|Washington|48.338166|-124.671736
 LmnByPkFL|Lemon Bay Park|Florida|26.972009|-82.374013
 SrTrcyQC|Sorel-Tracy|Quebec|46.0428|-73.1123
-ObsrvtQC|ObservÉtoiles|Quebec|45.042231|-72.565927
+ObsrvtQC|ObservÃ‰toiles|Quebec|45.042231|-72.565927
 PedlarCA|Peddler Hill|California|38.5776|-120.263633333
 WlntHllObNE|Walnut Hill Observatory|Nebraska|41.1602777778|-96.8583333333
 WltrFBrbrObGA|Walter F. Barber, Jr. Memorial Observatory|Georgia|33.7904|-84.9348
@@ -2097,7 +2097,7 @@ BlncSPTX|Blanco State Park|Texas|30.096782|-98.43459
 ApgrMT|Apgar Village|Montana|48.525|-113.991667
 PrvstQC|Prevost|Quebec|45.865674|-74.0721
 MuskMI|Muskegon Astronomical Society|Michigan|43.2633333333|-86.0236111111
-MrthsVdMA|Martha’s Vineyard|Massachusetts|41.343|-70.745
+MrthsVdMA|MarthaÂ’s Vineyard|Massachusetts|41.343|-70.745
 AlbrtLMN|Albert Lea|Minnesota|43.648|-93.368
 GdHpObWV|Good Hope Observatory|West Virginia|39.1679027778|-80.4400416667
 SvnPndsNCMI|Seven Ponds|Michigan|42.9278333333|-83.1891944444
@@ -2136,7 +2136,7 @@ CnwyNH|Conway|New Hampshire|43.979|-71.121
 BckltnWA|Bickleton|Washington|45.998|-120.3
 BytwnTX|Baytown|Texas|29.735|-94.977
 KlsrObTX|Kelsar Observatory|Texas|33.247718|-96.787717
-ObSrtyQC|Observatoire de La Sérénité|Quebec|46.82898|-71.41141
+ObSrtyQC|Observatoire de La SÃ©rÃ©nitÃ©|Quebec|46.82898|-71.41141
 LArrwhdSPTX|Lake Arrowhead State Park|Texas|33.758069|-98.395571
 Snt-Ann-Ds-MntsQC|Sainte-Anne-des-Monts|Quebec|49.1245778|-66.4892861
 CrshmAB|Claresholm|Alberta|50.0191916|-113.583768
@@ -2423,11 +2423,11 @@ PwdrsMllMO|Powders Mill|Missouri|37.17|-91.17
 FrfldHrbrNC|Fairfield Harbor|North Carolina|35.0516666667|-76.9633333333
 AldnVlyWA|Aladdin Valley|Washington|48.7959|-117.6586
 MrgnCtyObWV|Morgan County Observatory|West Virginia|39.482|-78.22
-GaspePQ|Gaspé|Quebec|48.833|-64.483
+GaspePQ|GaspÃ©|Quebec|48.833|-64.483
 HnEgyptObTX|Honea-Egypt Observatory|Texas|30.2769444444|-95.5936111111
 HgtonLkObMI|Houghton Lake Observatory Site|Michigan|44.3031833333|-84.7604
 PrtsdlfrQC|Portes de l'enfer|Quebec|47.687803|-71.234443
-ObAlpTrdfQC|Observatoire Alphonse-Tardif à St-Nérée|Quebec|46.7266666667|-70.7033333333
+ObAlpTrdfQC|Observatoire Alphonse-Tardif Ã  St-NÃ©rÃ©e|Quebec|46.7266666667|-70.7033333333
 SwtCrnSK|Swift Current|Saskatchewan|50.283|-107.767
 TlscpRwCA|Telescope Row|California|37.3361|-121.715
 RvnHllMI|Raven Hill Discovery Center|Michigan|45.133582|-85.055251
@@ -2679,7 +2679,7 @@ PchchSPAZ|Picacho Peak State Park|Arizona|32.631111|-111.415556
 LSmrvllSPBrchCrTX|Lake Somerville State Park  - Birch Creek Unit|Texas|30.310412|-96.628643
 GdlpRSPTX|Guadalupe River State Park|Texas|29.876074|-98.504058
 CmpKntON|Camp Kintail|Ontario|43.9572|-81.7248
-ObMtngCpQC|Observatoire de la Montagne Coupée|Quebec|46.193906|-73.4996032
+ObMtngCpQC|Observatoire de la Montagne CoupÃ©e|Quebec|46.193906|-73.4996032
 MntfrstON|Mount Forest|Ontario|43.981093|-80.7358653
 PrnctnBC|Princeton|British Columbia|49.4589588|-120.5061567
 BngObSC|Boeing Observatory|South Carolina|33.99852|-81.048038
@@ -2690,7 +2690,7 @@ BlythwdSC|Blythewood|South Carolina|34.214|-80.974
 MllRdgeNC|Mill Ridge|North Carolina|35.9002777778|-82.79
 MonroeMI|Monroe|Michigan|41.916|-83.398
 LkMeadNV|Lake Mead (ASN-LV)|Nevada|36.097|-114.824333333
-PntaCnQC|Pointe-au-Chêne|Quebec|45.65|-74.7333333333
+PntaCnQC|Pointe-au-ChÃªne|Quebec|45.65|-74.7333333333
 PckttObGA|Puckett Observatory|Georgia|34.7325|-84.5352777778
 ElwdEvnCWI|Ellwood H. May Environmental Park|Wisconsin|43.7791666667|-87.7566666667
 LllotBC|Lillooet|British Columbia|50.683|-121.933
@@ -2747,7 +2747,7 @@ OrnkObMI|Oronoko Observatory|Michigan|41.9166666667|-86.3833333333
 FrmnLkObKY|Freeman Lake Observatory|Kentucky|37.7263888889|-85.87
 LkGrnbyNCO|Lake Granby (North Shore)|Colorado|40.19103|-105.86576
 MncCynObCA|Santa Monica Canyon Observatory|California|34.052281|-118.499331
-ObCtgyQC|Observatoire astronomique de Châteauguay|Quebec|45.3597222222|-73.7038888889
+ObCtgyQC|Observatoire astronomique de ChÃ¢teauguay|Quebec|45.3597222222|-73.7038888889
 AlmaNB|Alma|New Brunswick|45.6|-64.95
 NRyrCO|North Raymer|Colorado|40.675833|-103.83
 LkSyObMA|Lake Sky Observatory|Massachusetts|42.0347|-71.8269
@@ -3052,7 +3052,7 @@ EchBffSPMO|Echo Bluff State Park|Missouri|37.308602|-91.410907
 RutenIA|Rutenbeck Observatory|Iowa|41.8666666667|-90.1666666667
 BodieCA|Bodie|California|38.22583|-119.03831
 TreadObON|Treadwell Observatory|Ontario|45.6|-75.0
-FrmVrnnPQ|Ferme Véronneau|Quebec|45.14248|-71.87453
+FrmVrnnPQ|Ferme VÃ©ronneau|Quebec|45.14248|-71.87453
 GrgSthrnPtGA|Georgia Southern Planetarium|Georgia|32.4261833333|-81.7792666667
 RftrMRObTX|Rafter M Ranch Observatory|Texas|30.1686666667|-95.8648333333
 WlkrTnON|Walkerton|Ontario|44.133|-81.15
@@ -3371,7 +3371,7 @@ WllwSghWMAIL|Willow Slough Fish and Wildlife Area|Indiana|41.0166666667|-87.4833
 SrncLkObNY|Saranac Lake Observatory|New York|44.33|-74.13
 EmprKs|Emporia|Kansas|38.404|-96.181
 CrlslIN|New Carlisle|Indiana|41.7061|-86.5123
-ObLAvrQC|Observatoire de L’Avenir|Quebec|45.732|-72.352
+ObLAvrQC|Observatoire de LÂ’Avenir|Quebec|45.732|-72.352
 CnCrkSPPA|Canoe Creek State Park|Pennsylvania|40.478|-78.272
 AlMyrsAMI|Al Meyers Airport|Michigan|42.025|-83.9388
 CmpFstsObNB|Camp Festus Observatory|New Brunswick|46.6398861111|-65.8571166667
@@ -3506,7 +3506,7 @@ DryPltNJ|Dreyfuss Planetarium|New Jersey|40.743221|-74.171923
 MhnsSndhllsSPTX|Monahans Sandhills State Park|Texas|31.65764|-102.831223
 GldSPHSTX|Goliad State Park & Historic Site|Texas|28.656494|-97.385362
 DMZObAZ|DMZ Observatories|Arizona|31.668611|-111.235
-SECxtQC|St-Élie-de-Caxton|Quebec|46.4885|-72.9568
+SECxtQC|St-Ã‰lie-de-Caxton|Quebec|46.4885|-72.9568
 GrcfdON|Gracefields|Ontario|43.94615|-78.544173
 EchvrrON|Apple Orchard Observatory|Ontario|45.338326|-76.439975
 EcnmyNS|Economy|Nova Scotia|45.3847203|-63.9144239
@@ -3576,7 +3576,7 @@ LdCA|Lodi|California|38.13|-121.271
 SkyMtSGNC|Smoky Mountain Stargaze|North Carolina|35.4252111111|-83.3328527778
 VrnTX|Vernon|Texas|34.154|-99.265
 WHldObPA|"Way The Held Out" Observatory|Pennsylvania|41.75525|-80.329467
-CGPThtfQC|Cégep de Thetford|Quebec|46.097549|-71.321976
+CGPThtfQC|CÃ©gep de Thetford|Quebec|46.097549|-71.321976
 MchCtyIN|Michigan City|Indiana|41.708|-86.895
 MrgntnNC|Morganton|North Carolina|35.745|-81.685
 SmileysNS|Smiley's Provincial Park|Nova Scotia|45.014179|-63.961576
@@ -3691,7 +3691,7 @@ MartisCrCA|Martis Creek Campground|California|39.3211111111|-120.122777778
 PhenixAL|Phenix City|Alabama|32.4633333333|-85.0033333333
 WilliamsObOR|Williams Observatory|Oregon|42.2|-123.29
 KtnBchFL|Keaton Beach|Florida|29.824|-83.595
-EclgqPSPQ|Centre écologique de Port-au-Saumon|Quebec|47.7583333333|-69.9416666667
+EclgqPSPQ|Centre Ã©cologique de Port-au-Saumon|Quebec|47.7583333333|-69.9416666667
 WasStPk1MO|Petroglyph|Missouri|38.0783333333|-90.6833333333
 StbnvllOH|Steubenville|Ohio|40.37|-80.63
 Vr10E6ObUT|Vermillion Cliffs Observatory|Utah|37.02875|-112.434805556
@@ -3838,7 +3838,7 @@ RstcVyObCA|Rustic Valley Observator|California|33.754098|-116.219008
 McCrdyRdCO|McCurdy Road|Colorado|38.7966|-104.1005
 AAObTX|Double AA Observatory|Texas|33.818071|-97.590348
 IdCtyID|Idaho City|Idaho|43.8285|-115.8346
-ObCLvsQC|Observatoire du CEGEP de Lévis-Lauzon|Quebec|46.81757|-71.1511
+ObCLvsQC|Observatoire du CEGEP de LÃ©vis-Lauzon|Quebec|46.81757|-71.1511
 JGDPNE|Fred G. Dale Planetarium|Nebraska|42.24043|-97.016203
 LksPkVA|Leakes Mill Park|Virginia|37.708101|-77.957114
 DRggs|Driggs|Idaho|43.7232522|-111.1113326
@@ -3970,7 +3970,7 @@ DnchrchON|Dunchurch|Ontario|45.6500985|-79.8506936
 SckvNB|Sackville|New Brunswick|45.897903|-64.3682804
 TrBC|Trail|British Columbia|49.0965676|-117.71173
 Gnt3AL|Galunlati 2 Observatory|Alabama|34.9181378|-86.8255544
-PRTAMQC|Planétarium Rio Tinto Alcan of Montréal|Quebec|45.560868|-73.550689
+PRTAMQC|PlanÃ©tarium Rio Tinto Alcan of MontrÃ©al|Quebec|45.560868|-73.550689
 DnTX|Dolen|Texas|30.4252|-94.8977
 PntdDsrtAZ|Painted Desert Inn|Arizona|35.083646|-109.788794
 PegodaObTX|Pegoda Observatory|Texas|30.9086111111|-95.285
@@ -3992,7 +3992,7 @@ WkksvllNC|Weeksville|North Carolina|36.205|-76.148
 DnmrkME|Moose Pond|Maine|44.0371666667|-70.7993333333
 HwlttObNY|Hewlett Observatory|New York|44.5635666667|-75.2482666667
 RbnsnCrkObCA|Robinson Creek Observatory|California|39.11851|-123.27286
-RvrPrrVlgQC|Rivière-à-Pierre Village|Quebec|46.9833333333|-72.1666666667
+RvrPrrVlgQC|RiviÃ¨re-Ã -Pierre Village|Quebec|46.9833333333|-72.1666666667
 LkStPtrPPON|Lake St. Peter Provincial Park|Ontario|45.319821|-78.0234
 KtnStCA|Keeton Observing Site|California|38.5061111111|-120.499166667
 ElDrdAR|El Dorado|Arkansas|33.208|-92.666
@@ -4073,7 +4073,7 @@ BlkRngObNM|Black Range Observatory|New Mexico|32.830133|-107.923167
 SchrnLk|Schroon Lake|New York|43.836|-73.759
 GrndRvrIA|Grand River|Iowa|40.819|-93.962
 AIGObKY|AIG public observatory|Kentucky|39.085922|-84.782774
-GSMQC|Le Golf Sélect de Mirabel|Quebec|45.67113|-74.239726
+GSMQC|Le Golf SÃ©lect de Mirabel|Quebec|45.67113|-74.239726
 LmrCA|Lemoore|California|36.3008|-119.7819
 PAWOAPA|Pittsburgh Space Weather Observation Area|Pennsylvania|40.965307|-80.102906
 BrclObMS|BarCla Hill Private Observatory|Mississippi|30.539444|-89.250278
@@ -4124,7 +4124,7 @@ AzSnrDMAZ|Arizona-Sonora Desert Museum|Arizona|32.245|-111.17
 OndaTN|Oneida|Tennessee|36.498|-84.513
 PySrFObOH|Payne's Starfield Observatory|Ohio|40.5004722222|-82.5721388889
 JnsvllWI|Janesville|Wisconsin|42.683|-89.019
-OSFlxDQC|Site d'observation de St-Félix d'Otis|Quebec|48.2667|-70.6167
+OSFlxDQC|Site d'observation de St-FÃ©lix d'Otis|Quebec|48.2667|-70.6167
 LtBlrTsWI|Little Black Township|Wisconsin|45.0313835|-90.4112473
 StmLSPCO|Steamboat Lake State Park|Colorado|40.7992|-106.9622
 LlyLkObIL|Lily Lake Observatory|Illinois|41.944444|-88.471686
@@ -4145,7 +4145,7 @@ SnJsfByBC|San Josef Bay|British Columbia|50.6727411|-128.2817337
 LOAMQC|LOAM|Quebec|45.6522|-75.2928
 HbmdObAR|Halbmond Observatorium|Arkansas|34.660995|-92.51687
 NthngOsAZ|Nothing Observing Station|Arizona|34.4803|-113.3421
-StArQC|Sainte-Aurélie|Quebec|46.176707|-70.355927
+StArQC|Sainte-AurÃ©lie|Quebec|46.176707|-70.355927
 CuMtnCO|Copper Mountain|Colorado|39.5014|-106.1516
 NMTVA|New Moon Telescopes Observatory|Virginia|37.201427|-77.479491
 RdbdIL|Red Bud|Illinois|38.2117172|-89.9942741
@@ -4401,7 +4401,7 @@ CdrHllTX|Cedar Hill|Texas|32.588|-96.956
 GreerAZ|Greer|Arizona|34.01|-109.458
 MndncCO|Moondance|Colorado|40.1328|-106.511266667
 Etna1CA|Etna|California|41.457|-122.894
-ObLcaBcQC|Observatoir "Lac à Beauce"|Quebec|47.45|-72.7833333333
+ObLcaBcQC|Observatoir "Lac Ã  Beauce"|Quebec|47.45|-72.7833333333
 SmRybrnTX|Sam Rayburn|Texas|31.09|-94.17
 ElkCrkVCCO|Elk Creek Visitor's Center|Colorado|38.4666666667|-107.166666667
 LcBxQC|Lac Buteux|Quebec|48.0375|-69.9354722222
@@ -4413,7 +4413,7 @@ BcaObFL|Boca Observatory|Florida|29.735|-84.9
 RckHllSC|Rock Hill|South Carolina|34.925|-81.025
 StrCrkObCO|Slater Creek Observatory|Colorado|38.8929|-105.2855
 PynCrCA|Paynes Creek Wetlands|California|40.2780333333|-122.181783333
-SMkCrQC|Observatoire St Marc des Carrières|Quebec|46.65|-72.029444
+SMkCrQC|Observatoire St Marc des CarriÃ¨res|Quebec|46.65|-72.029444
 SndtObKS|Sandlot Observatory|Kansas|38.797639|-95.706611
 NwBstnTX|New Boston|Texas|33.460551|-94.417246
 AnglsCA|AngelKillarney s City|California|38.068|-120.539
@@ -4629,7 +4629,7 @@ WspPnCEPA|Whispering Pines Camping Estates|Pennsylvania|41.178834|-76.323829
 KnbrnObOH|Kilbourne Observatory|Ohio|40.335553|-82.896266
 BksStr2ObMA|Blackstar II Observatory|Massachusetts|42.455528|-73.086758
 AmqQC|Amqui|Quebec|48.467|-67.433
-BtMntTQC|La Butte à Mounette|Quebec|47.409305|-61.824451
+BtMntTQC|La Butte Ã  Mounette|Quebec|47.409305|-61.824451
 LpCnlNE|Loup Canal|Nebraska|41.492967|-97.567
 EcErVNC|EcoEarth Village|North Carolina|35.6308|-81.9026
 2AObTX|Two Acres Observatory|Texas|32.102778|-96.661667
@@ -4690,7 +4690,7 @@ PrbtPt|Presbyterian Point|North Carolina|36.5479|-78.3385
 HvsGtFObIL|Heavens Gate Farm Observatory|Illinois|39.7572222222|-90.9802777778
 4WndsObMI|Four Winds Observatory|Michigan|44.95663|-85.79926
 Sth4kObCA|South Fork Observatory|California|36.4101|-118.8926
-CpPrbkQC|Campement Péribonka|Quebec|49.5166666667|-71.1666666667
+CpPrbkQC|Campement PÃ©ribonka|Quebec|49.5166666667|-71.1666666667
 BlrchObOH|Ballreich Observatory|Ohio|41.17335|-83.1574
 HrdLkPkFL|Hardee Lakes Park|Florida|27.6128583333|-81.9656833333
 GNMLME|Great Northern Moose Lodge|New Hampshire|44.676527|-71.181107
@@ -4774,7 +4774,7 @@ LdrSK|Leader|Saskatchewan|50.883|-109.55
 TnArcObOK|Ten Acre Observatory|Oklahoma|35.0886111111|-97.1208333333
 CmrrnKS|Cimarron|Kansas|37.807|-100.348
 CnnVT|Canaan|Vermont|44.996|-71.539
-PrPnsc1MX|Puerto Peñasco|Sonora|31.317|-113.533
+PrPnsc1MX|Puerto PeÃ±asco|Sonora|31.317|-113.533
 DlnLkIL|Dolan Lake|Illinois|38.0599333333|-88.3978333333
 GchtwnKY|Goochtown|Kentucky|37.322|-84.587
 NrflkNE|Norfolk(NE)|Nebraska|42.028|-97.417
@@ -4825,7 +4825,7 @@ ShMB|Shilo|Manitoba|49.806002|-99.639624
 ArnsMB|Arnes|Manitoba|50.802145|-96.995181
 CryRsObON|Canary Rise Observatory|Ontario|49.440949|-94.036687
 GdsbrPA|Gouldsboro|Pennsylvania|41.2445|-75.456
-SeptIlesPQ|Sept-Îles|Quebec|50.2166666667|-66.3833333333
+SeptIlesPQ|Sept-ÃŽles|Quebec|50.2166666667|-66.3833333333
 BelmontNV|Belmont|Nevada|38.5953888889|-116.875444444
 CmpCrkWV|Camp Creek|West Virginia|37.5|-81.13
 ChndlMtnAL|Chandler Mountain|Alabama|33.9166666667|-86.2833333333
@@ -4845,7 +4845,7 @@ MdnRckWI|Maiden Rock|Wisconsin|44.561|-92.309
 MtngNJ|Montague|New Jersey|41.303|-74.794
 NrthWndsObMI|North Wind Observatory|Michigan|44.081|-85.988
 SthrtnObPA|Southerton Observatory|Pennsylvania|40.94368|-76.9686
-PdIlStmtQC|Parc des Îles de St-Timothée|Quebec|45.2924|-74.0481
+PdIlStmtQC|Parc des ÃŽles de St-TimothÃ©e|Quebec|45.2924|-74.0481
 ERsslPkOK|Eldon Russell Park|Ohio|41.4242|-81.1631
 LttElkRMN|Little Elk River|Minnesota|46.0608|-94.6114
 GllnoLA|Galliano|Louisiana|29.4422|-90.2993
@@ -4896,7 +4896,7 @@ SpdLktOK|Spodue Lookout|Oregon|42.5930321|-121.2690823
 LynsNY|Lyons|New York|43.0642|-76.9902
 WhtmnNE|Whitman|Nebraska|42.0419371|-101.5232243
 HpknsvKY|Hopkinsville|Kentucky|36.8656008|-87.4886186
-BdLEQC|Belvédère du Lac de l'Est|Quebec|47.212989|-69.587115
+BdLEQC|BelvÃ©dÃ¨re du Lac de l'Est|Quebec|47.212989|-69.587115
 CytHwIN|Coyote Howl Observatory|Indiana|39.918|-85.783
 InvkNT|Inuvik|Northwest Territories|68.3607437|-133.7230178
 EstpntPE|East Point|Prince Edward Island|46.45|-62.0
@@ -4948,7 +4948,7 @@ CldnIL|Caledonia|Illinois|42.369|-88.893
 JhnsObFL|John's Observatory|Florida|27.536737|-82.463897
 HllCntyObTX|Hill County Star Watch Observatory|Texas|30.222882|-99.29615
 GaleObIA|Grant O. Gale Observatory|Iowa|41.752313|-92.719975
-CnnDtjBJ|Cañón del Tajo|Baja California|32.262265|-115.936175
+CnnDtjBJ|CaÃ±Ã³n del Tajo|Baja California|32.262265|-115.936175
 GlnnfLkAB|Glennifer Lake|Alberta|52.031796|-114.25987
 KKmCpAR|Kia Kima Scout Reservation|Arkansas|36.345278|-91.591667
 PrncObNC|Princeton Observatory|North Carolina|35.4774399|-78.1689529
@@ -5160,7 +5160,7 @@ FrmngtnMO|Farmington|Missouri|37.7808846|-90.4217895
 WvryMO|Waverly|Missouri|39.2094637|-93.5177118
 SptrnbrgSC|Spartanburg|South Carolina|34.9496|-81.932
 TwnCrNHSNC|Town Creek Indian Mound|North Carolina|35.1827098|-79.9292632
-EGCQC|École Gabriel-Le Courtoi|Quebec|49.123005|-66.493718
+EGCQC|Ã‰cole Gabriel-Le Courtoi|Quebec|49.123005|-66.493718
 GmtNT|Gameti|Northwest Territories|64.1121952|-117.3539847
 WhtNT|Whati|Northwest Territories|63.1439642|-117.2693419
 Trs-PstsQC|Trois-Pistoles|Quebec|48.1192674|-69.1652622
@@ -5537,7 +5537,7 @@ CnDrcSHSC|Colonial Dorchester State Historic Site|South Carolina|32.948566|-80.1
 AknSPSC|Aiken State Park|South Carolina|33.55088|-81.490499
 VBASBPFTN|VBAS at the Big Pond Farm|Tennessee|34.995875|-86.8199611
 MsVstOBNM|Mesa Vista Observatory|New Mexico|35.577722|-105.6986732
-ObLbQvnQC|Site d'observation de Lebel-sur-Quévillon|Quebec|48.876656|-77.13862
+ObLbQvnQC|Site d'observation de Lebel-sur-QuÃ©villon|Quebec|48.876656|-77.13862
 SnstByWhtON|Sunset Bay|Ontario|45.2533333333|-76.5877777778
 SksCstlNV|Stokes Castle|Nevada|39.493|-117.0785
 AlmaNE|Alma|Nebraska|40.10169|-99.36223
@@ -5580,7 +5580,7 @@ SpncObIN|Spenco Observatory|Indiana|37.939444|-87.943333
 LnLkSK|Laonil Lake|Saskatchewan|55.670276|-103.629785
 KrlndLkON|Kirkland Lake|Ontario|48.151|-80.033
 BrdlyObGA|Bradley Observatory|Georgia|33.76533|-84.29408
-LcMmtyQC|Lac Nemtayé|Quebec|48.41445|-67.575231
+LcMmtyQC|Lac NemtayÃ©|Quebec|48.41445|-67.575231
 DgshdGA|Dogshead|Georgia|34.37176|-83.7235
 DarkObKY|Darklight Observatory|Kentucky|36.981783|-87.920835
 ShrdOR|Sheridan|Oregon|45.0993|-123.3948
@@ -5715,7 +5715,7 @@ GrnWyLObFL|GreenWay Lakes Observatory|Florida|25.7444444444|-80.3941666667
 LnxIA|Lenox|Iowa|40.880342|-94.559381
 BrkOkObFL|Broken Oak Observatory|Florida|28.4967|-82.28745
 Oks3ObGA|Three Oaks Observatory|Georgia|31.15348|-83.595545
-SFlctQC|Ste-Félicité|Quebec|48.899851|-67.335978
+SFlctQC|Ste-FÃ©licitÃ©|Quebec|48.899851|-67.335978
 JrgsnObWI|Jorgenson Obs Site|Wisconsin|45.283191|-88.250213
 WntHwkObTN|The Winter-Hawk Memorial Observatory|Tennessee|35.9976|-82.99459
 TrppSD|Tripp|South Dakota|43.2255|-97.9659
@@ -5951,7 +5951,7 @@ HllTwnTN|Hill Town|Tennessee|35.7703|-87.1321
 MtgmryObOK|Montgomery Observatory|Oklahoma|34.26248|-97.30564
 CrkObOH|Clarke Observatory|Ohio|40.904|-81.1065
 LngMtnObTN|Long Mountain Observatory|Tennessee|35.6686111111|-85.6216666667
-EstcObSlMX|Estación de Observación Solar|Sonora|29.0666666667|-110.933333333
+EstcObSlMX|EstaciÃ³n de ObservaciÃ³n Solar|Sonora|29.0666666667|-110.933333333
 TRdObMS|The Reed Observatory|Mississippi|33.683|-88.324
 TSpncObGA|T. Spence Memorial Observatory|Georgia|32.72636|-82.227935
 WstfldNB|Westfield|New Brunswick|45.361705|-66.24167
