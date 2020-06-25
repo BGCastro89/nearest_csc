@@ -78,12 +78,12 @@ def nearest_csc(request):
                 curr_closest_deg = dist
                 closest_site = site
                 # Calculate distance modeling Earth as perfect sphere
-                dist_km = lat_lon_distance_in_km(lat, lon, site_lat, site_lon)
+                curr_closest_km = lat_lon_distance_in_km(lat, lon, site_lat, site_lon)
 
         # Grab site url and return site data if within 100 km
-        if dist_km < MAX_DIST_KM:
+        if curr_closest_km < MAX_DIST_KM:
             closest_site['status_msg'] = "SUCCESS"
-            closest_site['dist_km'] = dist_km
+            closest_site['dist_km'] = curr_closest_km
             closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
             closest_site['mini_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
         else: 
