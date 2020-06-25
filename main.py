@@ -5,6 +5,8 @@ import flask
 
 PATH = "."
 FILENAME = "csc_sites.json"
+MAX_DIST_KM = 100
+MAX_DIST_DEG = 3
 
 def lat_lon_distance_in_km(lat1, lon1, lat2, lon2):
     """Calculate distance between two latitude-longitide points on sphere in kilometres.
@@ -61,9 +63,7 @@ def nearest_csc(request):
             # API returns error
             closest_site = {'status_msg': "ERROR parsing coordinates or reading from list of CSC sites"}
 
-        # Initialize vars
-        closest_dist = 3 # units in degrees, can't be more than 2.828, or (2 * sqrt(2))
-        dist_km = 100
+        closest_dist = MAX_DIST_DEG # Max Dist of two points in 2x2 Lat/Lon Bin = 2.828, or (2 * sqrt(2))
 
         # Find the closest site in Clear Dark Sky database within bins
         for site in nearby_csc:
@@ -80,7 +80,7 @@ def nearest_csc(request):
                 dist_km = lat_lon_distance_in_km(lat, lon, site_lat, site_lon)
 
         # Grab site url and return site data if within 100 km
-        if dist_km < 100:
+        if dist_km < MAX_DIST_KM:
             closest_site['status_msg'] = "SUCCESS"
             closest_site['dist_km'] = dist_km
             closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
