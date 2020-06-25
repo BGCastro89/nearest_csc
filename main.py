@@ -1,6 +1,7 @@
 import json
 import math
 import os
+import flask
 
 PATH = "."
 FILENAME = "csc_sites.json"
@@ -38,6 +39,7 @@ def nearest_csc(request):
     lon = request.args.get('lon', type = float)
 
     file_path = os.path.join(PATH, FILENAME)
+    closest_site = {}
 
     # Get list of all csc site locations
     with open(file_path, 'r') as f:
@@ -57,11 +59,10 @@ def nearest_csc(request):
                                 nearby_csc.append(site)
         except:
             # API returns error
-            return "ERROR parsing coordinates or reading from list of CSC sites"
+            closest_site = {'status_msg': "ERROR parsing coordinates or reading from list of CSC sites"}
 
         # Initialize vars
         closest_dist = 3 # units in degrees, can't be more than 2.828, or (2 * sqrt(2))
-        closest_site = {}
         dist_km = 100
 
         # Find the closest site in Clear Dark Sky database within bins
@@ -80,9 +81,14 @@ def nearest_csc(request):
 
         # Grab site url and return site data if within 100 km
         if dist_km < 100:
+            closest_site['status_msg'] = "SUCCESS"
             closest_site['dist_km'] = dist_km
             closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
             closest_site['mini_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
-            return json.dumps(closest_site)
+        else: 
+            closest_site = {'status_msg': "ERROR parsing coordinates or reading from list of CSC sites"}
 
-        return "No sites found within 100 km"
+        response = flask.jsonify(closest_site)
+        response.headers.set('Access-Control-Allow-Origin', '*')
+        response.headers.set('Access-Control-Allow-Methods', 'GET, POST')
+        return response
