@@ -13,4 +13,5 @@
 .git
 .gitignore
 
+client
 node_modules
