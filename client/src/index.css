@@ -18,6 +18,7 @@ code {
 }
 
 .row-header {
+  min-height: 305px;
   display: flex;
 }
 
@@ -40,4 +41,36 @@ h1 {
 
 .popup-text{
   color: black;
+}
+
+.inline-img {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle
+}
+
+.mapContainer{
+  max-width:100%
+}
+
+.big-button {
+  background-color: #222222;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #444444
+}
+
+.big-button:hover {
+  background-color: #333333
+}
+
+.big-button:active {
+  background-color: #444444;
+  transform: translateY(1px);
 }
