@@ -1,8 +1,13 @@
 # Nearest Clear Sky Chart
-Simple API that returns the nearest Clear Sky Chart given a set of lat/lon coordinates. Clear Sky Charts are astronomy-focused weather forcasts provided by A. Danko's Clear Dark Sky website: www.cleardarksky.com
+Simple webapp that finds the nearest Clear Sky Chart for given lat/lon coordinates. Clear Sky Charts are astronomy-focused weather forcasts provided by A. Danko's Clear Dark Sky website: www.cleardarksky.com
 
-API Can be reached at https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc
-### Sample Input
+The web app is availible at: xxxx
+
+The API endpoint is public and can be reached at https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc
+
+### API Sample Input
+
+Example input to API endpoint using Lat/Lon for San Francisco
 
 ```/nearest_csc?lat=37.78&lon=-122.45```
 
@@ -21,4 +26,4 @@ http://www.cleardarksky.com/c/MrrsnPntCAcs0.gif
 Following a similar format are the main page for the site:
 http://www.cleardarksky.com/c/MrrsnPntCAkey.html?1
 
-The latter two links can be constructed by replacing `____csk.gif` in the url with `____cs0.gif` and `____key.html` respectively.
+The last link can be constructed for any site by replacing `____csk.gif` or `____cs0.gif` in the url with `____key.html`.
