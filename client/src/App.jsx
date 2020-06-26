@@ -31,7 +31,8 @@ export default function App() {
     // libraries
   });
   const [markers, setMarkers] = React.useState([]);
-  const [selected, setSelected] = React.useState(null);
+  const [nearestSite, setNearestSite] = React.useState({});
+  const [selectedSite, setSelectedSite] = React.useState({});
 
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
@@ -65,44 +66,89 @@ export default function App() {
   if (loadError) return "Error";
   if (!isLoaded) return "Loading...";
 
+  const getCSC = (lat, lng) => {
+    fetch(
+      `https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc?lat=${lat}&lon=${lng}`,
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+        }
+      }
+    )
+      .then(response => response.json())
+      .then(json => {
+        setNearestSite(json);
+        setSelectedSite(json)
+      });
+  }
+
   return (
     <div>
-      <h1>
-        Clear Dark Sky Finder{" "}
-        <span role="img" aria-label="telescope">
-          🔭
-        </span>
-      </h1>
-      <p>
-        Spot Selected:{" "}
-        {markers[0]
-          ? Number(markers[0].lat.toFixed(4)).toString() +
-            ", " +
-            Number(markers[0].lng.toFixed(4)).toString()
-          : null}
-      </p>
+      <div className="row-header">
+        <div className="col-left">
+          <h1>
+            Clear Sky Chart Finder{" "}
+          </h1>
+          <p> Clear Sky Charts are weather forcasts designed for astronomy!  </p>
+          <p> The charts are the work of by A. Danko, find out more at the <a href="http://www.cleardarksky.com/csk/">CSC website</a>.</p>
+          <p> To find the nearest site, click the map to place a <span role="img" aria-label="telescope">🔭</span> and press the button! </p>
+          <p>
+            Spot Selected:{" "}
+            {markers[0]
+              ? Number(markers[0].lat.toFixed(4)).toString() +
+                ", " +
+                Number(markers[0].lng.toFixed(4)).toString()
+              : null}
+          </p>
 
-      <button onClick={ markers[0] ? () => 
-        getCSC(markers[0].lat,markers[0].lng) : null}
-      > Find nearest CSC
-      </button>
+          <button onClick={ markers[0] ? () =>
+            getCSC(markers[0].lat,markers[0].lng) : null}
+          > Find nearest CSC </button>
 
-      <GoogleMap
-        id="map"
-        mapContainerStyle={mapContainerStyle}
-        zoom={4}
-        center={center}
-        options={options}
-        onClick={onMapClick}
-        onLoad={onMapLoad}
-      >
-        {markers.map(marker => (
-          <Marker
-            key={`${marker.lat}-${marker.lng}`}
-            position={{ lat: marker.lat, lng: marker.lng }}
-          />
-        ))}
-      </GoogleMap>
+        </div>
+
+        <div className="col-right">
+            <div> Site: {nearestSite.name} </div>
+            <div> Distance: {nearestSite.dist_km} Km from spot</div>
+            <img src={nearestSite.full_img}/>
+            {/* <span> {nearestSite.lon} </span>
+            <span> {nearestSite.lat} </span>    */}
+        </div>
+      </div>
+
+      <div>
+        <GoogleMap
+          id="map"
+          mapContainerStyle={mapContainerStyle}
+          zoom={4}
+          center={center}
+          options={options}
+          onClick={onMapClick}
+          onLoad={onMapLoad}
+        >
+          {markers.map(marker => (
+            <Marker
+              key={`${marker.lat}-${marker.lng}`}
+              position={{ lat: marker.lat, lng: marker.lng }}
+            />
+          ))}
+
+          {selectedSite.lat ? (
+            <InfoWindow
+              position={{ lat: selectedSite.lat, lng: selectedSite.lon }}
+              onCloseClick={() => {
+                setSelectedSite({});
+              }}
+            >
+              <div>
+                <div className="popup-text" role="img" aria-label="telescope">🔭 is {selectedSite.dist_km} Km from {selectedSite.name} </div>
+                <img src={selectedSite.mini_img} />
+              </div>
+            </InfoWindow>
+          ) : null}
+        </GoogleMap>
+      </div>
     </div>
   );
 }
@@ -117,20 +163,4 @@ function Locate({ panTo }) {
     },
     () => null
   );
-}
-
-function getCSC(lat, lng) {
-  fetch(
-    `https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc?lat=${lat}&lon=${lng}`,
-    {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-      }
-    }
-  )
-    .then(response => response.json())
-    .then(json => {
-      console.log(json)
-    });
 }

@@ -16,3 +16,28 @@ code {
   font-family: sans-serif;
   text-align: center;
 }
+
+.row-header {
+  display: flex;
+}
+
+.col-left  {
+  width: 33%;
+}
+
+.col-right {
+  width: 66%;
+}
+
+body {
+  color: #eeeeee;
+  background-color: black;
+}
+
+h1 {
+  color: #dddddd;
+}
+
+.popup-text{
+  color: black;
+}
