@@ -1,7 +1,7 @@
 # Nearest Clear Sky Chart
 Simple webapp that finds the nearest Clear Sky Chart for given lat/lon coordinates. Clear Sky Charts are astronomy-focused weather forcasts provided by A. Danko's Clear Dark Sky website: www.cleardarksky.com
 
-The web app is availible at: xxxx
+The web app is availible at: https://briangcastro.com/nearest-csc/
 
 The API endpoint is public and can be reached at https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc
 
