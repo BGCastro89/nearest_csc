@@ -90,7 +90,7 @@ export default function App() {
             Clear Sky Chart Finder{" "}
           </h1>
           <p> Clear Sky Charts are weather forcasts designed for astronomy!  </p>
-          <p> The charts are the work of by A. Danko, find out more at the <a href="http://www.cleardarksky.com/csk/">CSC website</a>.</p>
+          <p> The charts are the work of A. Danko, find out more at the <a href="http://www.cleardarksky.com/csk/">CSC website</a>.</p>
           <p> To find the nearest site, click the map to place a <img alt="" className="inline-img" src={white_telescope_url}/> and press the button! </p>
           <p>
             Spot Selected:{" "}
@@ -154,7 +154,11 @@ export default function App() {
               }}
             >
               <div>
-                <div className="popup-text"> <img className="inline-img" alt="you found the secret message!" src={black_telescope_url}/> is {selectedSite.dist_km} Km from <a target="_blank" href={`http://www.cleardarksky.com/c/${selectedSite.id}key.html`}>{selectedSite.name}</a> </div>
+                <div className="popup-text">
+                  <img className="inline-img" alt="you found the secret message!" src={black_telescope_url}/>
+                  is {selectedSite.dist_km} Km from {" "}
+                  <a target="_blank" rel='noopener noreferrer' href={`http://www.cleardarksky.com/c/${selectedSite.id}key.html`}>{selectedSite.name}</a>
+                </div>
                 <img alt="" src={selectedSite.mini_img} />
               </div>
             </InfoWindow>
