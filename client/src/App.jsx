@@ -6,13 +6,11 @@ import {
   InfoWindow
 } from "@react-google-maps/api";
 
-// import "@reach/combobox/styles.css";
-import mapStyles from "./index.css";
+import mapStyles from "./mapStyle";
 
-// const libraries = ["places"];
 const mapContainerStyle = {
-  height: "100vh",
-  width: "100vw"
+  height: "75vh",
+  width: "98vw"
 };
 const options = {
   styles: mapStyles,
@@ -25,10 +23,12 @@ const center = {
   lng: -97.785
 };
 
+const white_telescope_url = "https://upload.wikimedia.org/wikipedia/commons/f/fe/Telescope_mark_white.svg"
+const black_telescope_url = "https://upload.wikimedia.org/wikipedia/commons/d/d6/Telescope_mark.svg"
+
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-    // libraries
   });
   const [markers, setMarkers] = React.useState([]);
   const [nearestSite, setNearestSite] = React.useState({});
@@ -41,8 +41,7 @@ export default function App() {
 
   const onMapClick = React.useCallback(
     e => {
-      // console.log(markers);
-      setMarkers(current => {
+      setMarkers(() => {
         return [
           {
             lat: e.latLng.lat(),
@@ -51,7 +50,7 @@ export default function App() {
         ];
       });
     },
-    [markers]
+    []
   );
 
   const mapRef = React.useRef();
@@ -92,7 +91,7 @@ export default function App() {
           </h1>
           <p> Clear Sky Charts are weather forcasts designed for astronomy!  </p>
           <p> The charts are the work of by A. Danko, find out more at the <a href="http://www.cleardarksky.com/csk/">CSC website</a>.</p>
-          <p> To find the nearest site, click the map to place a <span role="img" aria-label="telescope">🔭</span> and press the button! </p>
+          <p> To find the nearest site, click the map to place a <img alt="" className="inline-img" src={white_telescope_url}/> and press the button! </p>
           <p>
             Spot Selected:{" "}
             {markers[0]
@@ -102,22 +101,31 @@ export default function App() {
               : null}
           </p>
 
-          <button onClick={ markers[0] ? () =>
+          <button className="big-button"
+            onClick={ markers[0] ? () =>
             getCSC(markers[0].lat,markers[0].lng) : null}
           > Find nearest CSC </button>
+
+          <p>c.2020 Brian Castro</p>
 
         </div>
 
         <div className="col-right">
+        { nearestSite.name ? (
+          <div>
             <div> Site: {nearestSite.name} </div>
             <div> Distance: {nearestSite.dist_km} Km from spot</div>
-            <img src={nearestSite.full_img}/>
-            {/* <span> {nearestSite.lon} </span>
-            <span> {nearestSite.lat} </span>    */}
+            <img alt="" src={nearestSite.full_img}/>
+          </div>
+        ) :
+        <div>
+          <div> {nearestSite.status_msg} </div>
+        </div>
+        }
         </div>
       </div>
 
-      <div>
+      <div className="mapContainer">
         <GoogleMap
           id="map"
           mapContainerStyle={mapContainerStyle}
@@ -131,6 +139,10 @@ export default function App() {
             <Marker
               key={`${marker.lat}-${marker.lng}`}
               position={{ lat: marker.lat, lng: marker.lng }}
+              icon={{
+                url: white_telescope_url,
+                scaledSize: new window.google.maps.Size(35, 35)
+              }}
             />
           ))}
 
@@ -142,8 +154,8 @@ export default function App() {
               }}
             >
               <div>
-                <div className="popup-text" role="img" aria-label="telescope">🔭 is {selectedSite.dist_km} Km from {selectedSite.name} </div>
-                <img src={selectedSite.mini_img} />
+                <div className="popup-text"> <img className="inline-img" alt="you found the secret message!" src={black_telescope_url}/> is {selectedSite.dist_km} Km from <a target="_blank" href={`http://www.cleardarksky.com/c/${selectedSite.id}key.html`}>{selectedSite.name}</a> </div>
+                <img alt="" src={selectedSite.mini_img} />
               </div>
             </InfoWindow>
           ) : null}
