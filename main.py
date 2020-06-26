@@ -3,7 +3,7 @@ import math
 import os
 import flask
 
-PATH = "."
+PATH = "csc_data"
 FILENAME = "csc_sites.json"
 MAX_DIST_KM = 100
 MAX_DIST_DEG = 3
