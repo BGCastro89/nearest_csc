@@ -84,10 +84,10 @@ def nearest_csc(request):
         if curr_closest_km < MAX_DIST_KM:
             closest_site['status_msg'] = "SUCCESS"
             closest_site['dist_km'] = curr_closest_km
-            closest_site['full_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
-            closest_site['mini_img'] = "http://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
+            closest_site['full_img'] = "https://www.cleardarksky.com/c/"+closest_site['id']+"csk.gif"
+            closest_site['mini_img'] = "https://www.cleardarksky.com/c/"+closest_site['id']+"cs0.gif"
         else: 
-            closest_site = {'status_msg': "No sites within 100km. Only availible in US, Canada, and Northen Mexico"}
+            closest_site = {'status_msg': "No sites within 100 km. CSC sites are only available in the Continental US, Canada, and Northern Mexico"}
 
         response = flask.jsonify(closest_site)
         response.headers.set('Access-Control-Allow-Origin', '*')
