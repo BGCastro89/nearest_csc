@@ -1,4 +1,7 @@
 import React from "react";
+import { usePromiseTracker } from "react-promise-tracker";
+import { trackPromise } from 'react-promise-tracker';
+import Loader from 'react-loader-spinner';
 import {
   GoogleMap,
   useLoadScript,
@@ -26,6 +29,7 @@ const center = {
 const white_telescope_url = "https://upload.wikimedia.org/wikipedia/commons/f/fe/Telescope_mark_white.svg"
 const black_telescope_url = "https://upload.wikimedia.org/wikipedia/commons/d/d6/Telescope_mark.svg"
 
+
 export default function App() {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
@@ -33,7 +37,17 @@ export default function App() {
   const [markers, setMarkers] = React.useState([]);
   const [nearestSite, setNearestSite] = React.useState({});
   const [selectedSite, setSelectedSite] = React.useState({});
+  const { promiseInProgress } = usePromiseTracker();
 
+  const LoadingIndicator = props => {
+    return (
+      promiseInProgress && 
+    <div className="loading-3dots">
+     <Loader type="ThreeDots" color="#dddddd" height="100" width="100" />
+   </div>
+   );  
+  }
+  
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
     mapRef.current.setZoom(10);
@@ -66,20 +80,22 @@ export default function App() {
   if (!isLoaded) return "Loading...";
 
   const getCSC = (lat, lng) => {
-    fetch(
-      `https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc?lat=${lat}&lon=${lng}`,
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
+    setNearestSite({});
+    trackPromise(
+      fetch(
+        `https://us-central1-stargazr-ncc-2893.cloudfunctions.net/nearest_csc?lat=${lat}&lon=${lng}`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          }
         }
-      }
-    )
-      .then(response => response.json())
-      .then(json => {
-        setNearestSite(json);
-        setSelectedSite(json)
-      });
+      )
+        .then(response => response.json())
+        .then(json => {
+          setNearestSite(json);
+          setSelectedSite(json);
+      }));
   }
 
   return (
@@ -101,7 +117,9 @@ export default function App() {
               : null}
           </p>
 
-          <button className="big-button"
+          <button 
+            className="big-button"
+            disabled={promiseInProgress || !markers[0]}
             onClick={ markers[0] ? () =>
             getCSC(markers[0].lat,markers[0].lng) : null}
           > Find nearest CSC </button>
@@ -111,6 +129,7 @@ export default function App() {
         </div>
 
         <div className="col-right">
+        <LoadingIndicator/>
         { nearestSite.name ? (
           <div>
             <div> Site: {nearestSite.name} </div>
