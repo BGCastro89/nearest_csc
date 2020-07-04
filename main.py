@@ -63,22 +63,15 @@ def nearest_csc(request):
             # API returns error
             closest_site = {'status_msg': "ERROR parsing coordinates or reading from list of CSC sites"}
 
-        curr_closest_deg = MAX_DIST_DEG # Max Dist of two points in 2x2 Lat/Lon Bin = 2.828, or (2 * sqrt(2))
         curr_closest_km = MAX_DIST_KM
 
         # Find the closest site in Clear Dark Sky database within bins
         for site in nearby_csc:
-            site_lat = site["lat"]
-            site_lon = site["lon"]
+            dist = lat_lon_distance_in_km(lat, lon, site["lat"], site["lon"])
 
-            # Quick Approximate distance in units of degrees, only calculate km distance if closer than previous closest
-            dist = math.sqrt( (site_lat-lat)**2 + (site_lon-lon)**2 )
-
-            if dist < curr_closest_deg:
-                curr_closest_deg = dist
+            if dist < curr_closest_km:
+                curr_closest_km = dist
                 closest_site = site
-                # Calculate distance modeling Earth as perfect sphere
-                curr_closest_km = lat_lon_distance_in_km(lat, lon, site_lat, site_lon)
 
         # Grab site url and return site data if within 100 km
         if curr_closest_km < MAX_DIST_KM:
