@@ -6,7 +6,6 @@ import flask
 PATH = "csc_data"
 FILENAME = "csc_sites.json"
 MAX_DIST_KM = 100
-MAX_DIST_DEG = 3
 
 def lat_lon_distance_in_km(lat1, lon1, lat2, lon2):
     """Calculate distance between two latitude-longitide points on sphere in kilometres.
