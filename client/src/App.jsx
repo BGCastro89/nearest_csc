@@ -12,9 +12,13 @@ import {
 import mapStyles from "./mapStyle";
 
 const mapContainerStyle = {
-  height: "75vh",
-  width: "98vw"
+  position: "absolute",
+  top: "325px",
+  left: "0px",
+  right: "0px",
+  bottom: "0px"
 };
+
 const options = {
   styles: mapStyles,
   disableDefaultUI: true,
@@ -99,7 +103,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="Container">
       <div className="row-header">
         <div className="col-left">
           <h1>
