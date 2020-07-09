@@ -12,10 +12,7 @@ import (
 
 const cscKeysFile = "chart_keys00.txt"
 const cscPropFile = "chart_prop00.txt"
-
-const inTestFile1 = "test.txt"
-const inTestFile2 = "test2.txt"
-const outTestFile = "go_out_test.json"
+const outJSONFile = "csc_sites.json"
 
 type Site struct {
 	ID   string  `json:"id"`
@@ -135,5 +132,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	ioutil.WriteFile(outTestFile, jsonByteSlice, os.ModePerm)
+	ioutil.WriteFile(outJSONFile, jsonByteSlice, os.ModePerm)
 }
