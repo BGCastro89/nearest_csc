@@ -66,7 +66,7 @@ def nearest_csc(request):
 
         # Find the closest site in Clear Dark Sky database within bins
         for site in nearby_csc:
-            dist = lat_lon_distance_in_km(lat, lon, site["lat"], site["lon"])
+            dist = lat_lng_distance_in_km(lat, lng, site["lat"], site["lng"])
 
             if dist < curr_closest_km:
                 curr_closest_km = dist
